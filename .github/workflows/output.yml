@@ -1,0 +1,11 @@
+name: Event output
+
+on: push
+
+jobs:
+  info:
+    runs-on: ubunt-latest
+
+    steps:
+      - name: Show event data
+        run: echo "${{ toJSON(github.event) }}"
