@@ -1,6 +1,6 @@
 name: Event output
 
-on: push
+on: issues
 
 jobs:
   info:
