@@ -4,7 +4,7 @@ on: issues
 
 jobs:
   info:
-    runs-on: ubunt-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Show event data
