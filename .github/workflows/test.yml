@@ -1,16 +1,23 @@
 name: Lint, test and deploy
+
 on: push
+
 jobs:
-  lint:
+  build-and-test:
     runs-on: ubuntu-latest
+
     steps:
       - name: Get code
         uses: actions/checkout@v7
+
       - name: Install dependencies
         run: npm ci
+
       - name: Lint files
         run: npm run lint
+
       - name: Test
         run: npm run test
+
       - name: Build
         run: npm run build
